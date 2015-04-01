@@ -54,11 +54,6 @@ return array(
 						'target' => 'aimeos_shop_account_favorite',
 					),
 				),
-				'pinned' => array(
-					'url' => array(
-						'target' => 'aimeos_shop_account_pinned',
-					),
-				),
 				'watch' => array(
 					'url' => array(
 						'target' => 'aimeos_shop_account_watch',
@@ -79,6 +74,13 @@ return array(
 				'list' => array(
 					'url' => array(
 						'target' => 'aimeos_shop_list',
+					),
+				),
+				'session' => array(
+					'pinned' => array(
+						'url' => array(
+							'target' => 'aimeos_shop_session_pinned',
+						),
 					),
 				),
 				'stock' => array(
