@@ -18,7 +18,7 @@ pages including routing is also available for a quick start.
 
 ## Table of content
 
-- [Installation/Update](#installation-or-update)
+- [Installation](#installation)
 - [Setup](#setup)
 - [Hints](#hints)
 - [License](#license)
