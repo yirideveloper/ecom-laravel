@@ -178,12 +178,9 @@ Point your browser to the list page of the shop using:
 
 http://127.0.0.1:8000/index.php/list
 
-**Caution:** CSRF protection is enabled by default but for the ```/confirm``` and ```/update```
+**Note:** CSRF protection is enabled by default but for the ```/confirm``` and ```/update```
 routes, you may have to [disable CSRF](http://laravel.com/docs/5.1/routing#csrf-excluding-uris)
 if one of the payment providers is sending data via POST requests.
-
-**Note:** Integrating the Aimeos package adds some routes like `/list` or `/admin` to your
-Laravel installation but the **home page stays untouched!**
 
 ## Admin
 
@@ -197,10 +194,12 @@ Please follow the Laravel documentation to create the necessary code:
 Test if your authentication setup works before you continue. Create an admin account
 for your Laravel application so you will be able to log into the Aimeos admin interface:
 
-```php artisan aimeos:account <email> --admin```
+```php artisan aimeos:account --admin <email>```
 
 The e-mail address is the user name for login and the account will work for the
 frontend too. To protect the new account, the command will ask you for a password.
+The same command can create limited accounts by using "--editor" or "--api" instead of
+"--admin".
 
 As a last step, you need to extend the ```boot()``` method of your
 ```App\Providers\AuthServiceProvider``` class and add the lines to define how
@@ -211,8 +210,8 @@ public function boot(GateContract $gate)
 {
 	// Keep the lines before
 
-	$gate->define('admin', function($user) {
-	    return app( '\Aimeos\Shop\Base\Support' )->checkGroup( $user->id, 'admin' );
+	$gate->define('admin', function($user, $roles) {
+		return app( '\Aimeos\Shop\Base\Support' )->checkGroup( $user->id, $roles );
 	});
 }
 ```
