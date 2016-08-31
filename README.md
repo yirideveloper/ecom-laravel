@@ -28,10 +28,6 @@ pages including routing is also available for a quick start.
 ## Installation or update
 
 This document is for the latest Aimeos Laravel **2016.04 release and later**.
-Current versions are:
-* Stable: ~2016.07
-* LTS: ~1.2
-
 If you want to **upgrade between major versions**, please have a look into the
 [upgrade guide](https://aimeos.org/docs/Laravel/Upgrade)!
 
@@ -43,7 +39,7 @@ to your composer.json of your Laravel project:
     "prefer-stable": true,
     "minimum-stability": "dev",
     "require": {
-        "aimeos/aimeos-laravel": "~2016.07",
+        "aimeos/aimeos-laravel": "~2016.04",
         ...
     },
     "scripts": {
@@ -269,7 +265,7 @@ is available for free.
 
 * [Web site](https://aimeos.org/Laravel)
 * [Documentation](https://aimeos.org/docs/Laravel)
-* [Forum](https://aimeos.org/help/laravel-package-f18/)
+* [Help](https://aimeos.org/help/laravel-package-f18/)
 * [Issue tracker](https://github.com/aimeos/aimeos-laravel/issues)
 * [Composer packages](https://packagist.org/packages/aimeos/aimeos-laravel)
 * [Source code](https://github.com/aimeos/aimeos-laravel)
