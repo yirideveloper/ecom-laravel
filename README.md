@@ -6,7 +6,6 @@
 [![Build Status](https://travis-ci.org/aimeos/aimeos-laravel.svg)](https://travis-ci.org/aimeos/aimeos-laravel)
 [![Coverage Status](https://coveralls.io/repos/aimeos/aimeos-laravel/badge.svg?branch=master&service=github)](https://coveralls.io/github/aimeos/aimeos-laravel?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/aimeos/aimeos-laravel/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/aimeos/aimeos-laravel/?branch=master)
-[![HHVM Status](http://hhvm.h4cc.de/badge/aimeos/aimeos-laravel.svg)](http://hhvm.h4cc.de/package/aimeos/aimeos-laravel)
 
 The repository contains the web shop package for Laravel 5
 integrating the Aimeos e-commerce library into Laravel. The package provides
@@ -28,6 +27,10 @@ pages including routing is also available for a quick start.
 ## Installation or update
 
 This document is for the latest Aimeos Laravel **2016.04 release and later**.
+Current versions are:
+* Stable: ~2016.07
+* LTS: ~1.2
+
 If you want to **upgrade between major versions**, please have a look into the
 [upgrade guide](https://aimeos.org/docs/Laravel/Upgrade)!
 
@@ -39,7 +42,7 @@ to your composer.json of your Laravel project:
     "prefer-stable": true,
     "minimum-stability": "dev",
     "require": {
-        "aimeos/aimeos-laravel": "~2016.04",
+        "aimeos/aimeos-laravel": "~2016.07",
         ...
     },
     "scripts": {
@@ -62,7 +65,7 @@ Afterwards, install the Aimeos shop package using
 `config/database.php` or `.env` file (depending on the Laravel version). Sometimes,
 the .env files are not available in the Laravel application and you will get exceptions
 that the connection to the database failed. In that case, add the database credentials
-to the **resource/db section of your ./config/shop.php** file too! 
+to the **resource/db section of your ./config/shop.php** file too!
 
 Next, the Aimeos provider class must be added to the `providers` array of the
 `config/app.php` file so the application and Laravel command task will work:
@@ -265,7 +268,7 @@ is available for free.
 
 * [Web site](https://aimeos.org/Laravel)
 * [Documentation](https://aimeos.org/docs/Laravel)
-* [Help](https://aimeos.org/help/laravel-package-f18/)
+* [Forum](https://aimeos.org/help/laravel-package-f18/)
 * [Issue tracker](https://github.com/aimeos/aimeos-laravel/issues)
 * [Composer packages](https://packagist.org/packages/aimeos/aimeos-laravel)
 * [Source code](https://github.com/aimeos/aimeos-laravel)
