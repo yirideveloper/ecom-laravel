@@ -3,7 +3,6 @@
 </a>
 
 # Aimeos Laravel package
-[![Total Downloads](https://poser.pugx.org/aimeos/aimeos-laravel/d/total.svg)](https://packagist.org/packages/aimeos/aimeos-laravel)
 [![Build Status](https://travis-ci.org/aimeos/aimeos-laravel.svg)](https://travis-ci.org/aimeos/aimeos-laravel)
 [![Coverage Status](https://coveralls.io/repos/aimeos/aimeos-laravel/badge.svg?branch=master&service=github)](https://coveralls.io/github/aimeos/aimeos-laravel?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/aimeos/aimeos-laravel/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/aimeos/aimeos-laravel/?branch=master)
@@ -33,7 +32,7 @@ and customize anything to your needs.
 
 This document is for the Aimeos Laravel package **2018.10 and later**.
 
-- Beta release: 2019.01 (Laravel 5.3 to 5.8)
+- Stable release: 2019.04 (Laravel 5.3 to 5.8)
 - LTS release: 2018.10 (Laravel 5.3 to 5.8)
 
 If you want to **upgrade between major versions**, please have a look into the
@@ -107,7 +106,7 @@ Then, add these lines to the composer.json of the **Laravel skeleton application
     "prefer-stable": true,
     "minimum-stability": "dev",
     "require": {
-        "aimeos/aimeos-laravel": "~2018.10",
+        "aimeos/aimeos-laravel": "~2019.04",
         ...
     },
     "scripts": {
